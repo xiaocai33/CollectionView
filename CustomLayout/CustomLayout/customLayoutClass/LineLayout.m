@@ -8,7 +8,7 @@
 
 #import "LineLayout.h"
 
-static const CGFloat ItemWH = 130;
+static const CGFloat ItemWH = 140;
 
 @implementation LineLayout
 /**
@@ -34,8 +34,9 @@ static const CGFloat ItemWH = 130;
     self.minimumLineSpacing = 60;
     
     //设置内边距
-    CGFloat inset = (self.collectionView.frame.size.width - ItemWH) * 0.5;
-    self.sectionInset = UIEdgeInsetsMake(0, inset, 0, inset);
+    CGFloat insetH = (self.collectionView.frame.size.width - ItemWH) * 0.5;//水平居中
+    CGFloat insetV = (self.collectionView.frame.size.height - ItemWH) * 0.5;//竖直居中
+    self.sectionInset = UIEdgeInsetsMake(insetV, insetH, insetV, insetH);
     
 }
 

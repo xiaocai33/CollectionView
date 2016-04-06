@@ -18,13 +18,13 @@
     
     UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
-    attr.size = CGSizeMake(80, 80);
+    attr.size = CGSizeMake(100, 100);
     
     //设置圆心
     CGPoint circleCenter = CGPointMake(self.collectionView.frame.size.width * 0.5, self.collectionView.frame.size.height * 0.5);
     
     //半径
-    CGFloat circleR = 70;
+    CGFloat circleR = 100;
     
     //设置初始化角度
     CGFloat rangeInit = M_PI * 2 / ([self.collectionView numberOfItemsInSection:indexPath.section]);

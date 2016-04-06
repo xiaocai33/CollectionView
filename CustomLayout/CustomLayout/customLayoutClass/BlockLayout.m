@@ -27,7 +27,7 @@
     UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
     //设置属性大小
-    attr.size = CGSizeMake(130, 130);
+    attr.size = CGSizeMake(180, 180);
     
     //设置属性的中心点
     attr.center = CGPointMake(self.collectionView.frame.size.width * 0.5, self.collectionView.frame.size.height * 0.5);

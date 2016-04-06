@@ -73,14 +73,14 @@ static NSString  * const ID = @"image";
     
     //自动布局
     //X 和 宽度
-    NSArray *btnX = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[flowLayoutBtn]-20-[lineLayoutBtn(==flowLayoutBtn)]-20-[blockLayoutBtn(==flowLayoutBtn)]-20-[circleLayoutBtn(==flowLayoutBtn)]-20-|" options:NSLayoutFormatAlignAllTop metrics:nil views:@{@"flowLayoutBtn":flowLayoutBtn, @"lineLayoutBtn":lineLayoutBtn, @"blockLayoutBtn":blockLayoutBtn, @"circleLayoutBtn":circleLayoutBtn}];
+    NSArray *btnX = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[flowLayoutBtn]-10-[lineLayoutBtn(==flowLayoutBtn)]-10-[blockLayoutBtn(==flowLayoutBtn)]-10-[circleLayoutBtn(==flowLayoutBtn)]-10-|" options:NSLayoutFormatAlignAllTop metrics:nil views:@{@"flowLayoutBtn":flowLayoutBtn, @"lineLayoutBtn":lineLayoutBtn, @"blockLayoutBtn":blockLayoutBtn, @"circleLayoutBtn":circleLayoutBtn}];
     [self.view addConstraints:btnX];
     
-    NSArray *btnW = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[flowLayoutBtn]-20-[lineLayoutBtn(==flowLayoutBtn)]-20-[blockLayoutBtn(==flowLayoutBtn)]-20-[circleLayoutBtn(==flowLayoutBtn)]-20-|" options:NSLayoutFormatAlignAllBottom metrics:nil views:@{@"flowLayoutBtn":flowLayoutBtn, @"lineLayoutBtn":lineLayoutBtn, @"blockLayoutBtn":blockLayoutBtn, @"circleLayoutBtn":circleLayoutBtn}];
+    NSArray *btnW = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[flowLayoutBtn]-10-[lineLayoutBtn(==flowLayoutBtn)]-10-[blockLayoutBtn(==flowLayoutBtn)]-10-[circleLayoutBtn(==flowLayoutBtn)]-10-|" options:NSLayoutFormatAlignAllBottom metrics:nil views:@{@"flowLayoutBtn":flowLayoutBtn, @"lineLayoutBtn":lineLayoutBtn, @"blockLayoutBtn":blockLayoutBtn, @"circleLayoutBtn":circleLayoutBtn}];
     [self.view addConstraints:btnW];
     
     //Y 和 高度
-    NSArray *btnYH = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[flowLayoutBtn(50)]-30-|" options:0 metrics:nil views:@{@"flowLayoutBtn":flowLayoutBtn}];
+    NSArray *btnYH = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[flowLayoutBtn(30)]-10-|" options:0 metrics:nil views:@{@"flowLayoutBtn":flowLayoutBtn}];
     [self.view addConstraints:btnYH];
     
     //添加UICollectionView
@@ -91,7 +91,7 @@ static NSString  * const ID = @"image";
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     
     //设置布局中每个cell的大小
-    flowLayout.itemSize = CGSizeMake(80, 80);
+    flowLayout.itemSize = CGSizeMake(90, 90);
     
     //设置布局中每个cell的列间距
     //flowLayout.minimumInteritemSpacing = 10;
@@ -129,7 +129,7 @@ static NSString  * const ID = @"image";
     NSArray *collectionXW = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[collection]-0-|" options:0 metrics:nil views:@{@"collection":collection}];
     [self.view addConstraints:collectionXW];
     //Y 和 高度
-    NSArray *collectionYH = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[collection(250)]" options:0 metrics:nil views:@{@"collection":collection}];
+    NSArray *collectionYH = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[collection]-45-|" options:0 metrics:nil views:@{@"collection":collection}];
     [self.view addConstraints:collectionYH];
 }
 
@@ -169,7 +169,7 @@ static NSString  * const ID = @"image";
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setBackgroundColor:[UIColor blueColor]];
-    btn.titleLabel.font = [UIFont systemFontOfSize:16.0];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14.0];
     btn.tag = type;
     [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     return btn;

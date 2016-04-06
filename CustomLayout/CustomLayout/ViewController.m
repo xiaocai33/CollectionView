@@ -42,7 +42,7 @@ static NSString  * const ID = @"image";
     if (_images == nil) {
         _images = [NSMutableArray array];
         //假数据
-        for (int i = 0; i<20; i++) {
+        for (int i = 0; i<33; i++) {
             NSString *imageName = [NSString stringWithFormat:@"%d.png", i + 1];
             [_images addObject:imageName];
         }

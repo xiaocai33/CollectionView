@@ -11,6 +11,7 @@
 #import "LineLayout.h"
 #import "BlockLayout.h"
 #import "CircleLayout.h"
+#import "CollectionCell.h"
 
 typedef enum{
     /** 流水布局 */
@@ -114,7 +115,9 @@ static NSString  * const ID = @"image";
     //设置布局为:UICollectionViewFlowLayout流水布局
     //[collection setCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init] animated:YES];
     //注册cell(从xib加载)
-    [collection registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ID];
+    //[collection registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ID];
+    //注册cell
+    [collection registerClass:[CollectionCell class] forCellWithReuseIdentifier:ID];
     [self.view addSubview:collection];
     
     self.collectionView = collection;
@@ -137,7 +140,8 @@ static NSString  * const ID = @"image";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    //CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    CollectionCell *cell = [CollectionCell collectionCellWithCollectionView:collectionView cellForItemAtIndexPath:indexPath];
     
     cell.image = self.images[indexPath.item];
     

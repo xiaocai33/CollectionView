@@ -20,6 +20,7 @@
 		33C982151CB534A800AA9A3D /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C982141CB534A800AA9A3D /* CircleLayout.m */; };
 		33C9821A1CB53B7D00AA9A3D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C982181CB53B7D00AA9A3D /* CollectionViewCell.m */; };
 		33C9821B1CB53B7D00AA9A3D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C982191CB53B7D00AA9A3D /* CollectionViewCell.xib */; };
+		33C9821E1CB53BD500AA9A3D /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C9821D1CB53BD500AA9A3D /* CollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		33C982171CB53B7D00AA9A3D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		33C982181CB53B7D00AA9A3D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		33C982191CB53B7D00AA9A3D /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		33C9821C1CB53BD500AA9A3D /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		33C9821D1CB53BD500AA9A3D /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				33C982171CB53B7D00AA9A3D /* CollectionViewCell.h */,
 				33C982181CB53B7D00AA9A3D /* CollectionViewCell.m */,
 				33C982191CB53B7D00AA9A3D /* CollectionViewCell.xib */,
+				33C9821C1CB53BD500AA9A3D /* CollectionCell.h */,
+				33C9821D1CB53BD500AA9A3D /* CollectionCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				33C9820F1CB5221500AA9A3D /* LineLayout.m in Sources */,
 				33C9821A1CB53B7D00AA9A3D /* CollectionViewCell.m in Sources */,
 				33AEB76C1CB40F0800E3A21F /* main.m in Sources */,
+				33C9821E1CB53BD500AA9A3D /* CollectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

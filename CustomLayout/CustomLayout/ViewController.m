@@ -10,6 +10,7 @@
 #import "CollectionViewCell.h"
 #import "LineLayout.h"
 #import "BlockLayout.h"
+#import "CircleLayout.h"
 
 typedef enum{
     /** 流水布局 */
@@ -125,7 +126,7 @@ static NSString  * const ID = @"image";
     NSArray *collectionXW = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[collection]-0-|" options:0 metrics:nil views:@{@"collection":collection}];
     [self.view addConstraints:collectionXW];
     //Y 和 高度
-    NSArray *collectionYH = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-100-[collection(200)]" options:0 metrics:nil views:@{@"collection":collection}];
+    NSArray *collectionYH = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[collection(250)]" options:0 metrics:nil views:@{@"collection":collection}];
     [self.view addConstraints:collectionYH];
 }
 
@@ -196,8 +197,12 @@ static NSString  * const ID = @"image";
         }
 
         case buttonTypeCircle:
-            NSLog(@"buttonTypeCircle");
+        {
+            if (![self.collectionView.collectionViewLayout isKindOfClass:[CircleLayout class]]) {
+                [self.collectionView setCollectionViewLayout:[[CircleLayout alloc] init] animated:YES];
+            }
             break;
+        }
             
         default:
             break;

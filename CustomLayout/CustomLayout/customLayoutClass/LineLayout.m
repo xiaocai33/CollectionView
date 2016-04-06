@@ -8,7 +8,7 @@
 
 #import "LineLayout.h"
 
-static const CGFloat ItemWH = 100;
+static const CGFloat ItemWH = 130;
 
 @implementation LineLayout
 /**

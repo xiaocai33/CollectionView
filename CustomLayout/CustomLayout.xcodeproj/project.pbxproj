@@ -19,6 +19,7 @@
 		33C9820C1CB5185200AA9A3D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9820A1CB5185200AA9A3D /* CollectionViewCell.xib */; };
 		33C9820F1CB5221500AA9A3D /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C9820E1CB5221500AA9A3D /* LineLayout.m */; };
 		33C982121CB52E9900AA9A3D /* BlockLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C982111CB52E9900AA9A3D /* BlockLayout.m */; };
+		33C982151CB534A800AA9A3D /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C982141CB534A800AA9A3D /* CircleLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		33C9820E1CB5221500AA9A3D /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
 		33C982101CB52E9900AA9A3D /* BlockLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockLayout.h; sourceTree = "<group>"; };
 		33C982111CB52E9900AA9A3D /* BlockLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockLayout.m; sourceTree = "<group>"; };
+		33C982131CB534A800AA9A3D /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
+		33C982141CB534A800AA9A3D /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				33C9820E1CB5221500AA9A3D /* LineLayout.m */,
 				33C982101CB52E9900AA9A3D /* BlockLayout.h */,
 				33C982111CB52E9900AA9A3D /* BlockLayout.m */,
+				33C982131CB534A800AA9A3D /* CircleLayout.h */,
+				33C982141CB534A800AA9A3D /* CircleLayout.m */,
 			);
 			path = customLayoutClass;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C982151CB534A800AA9A3D /* CircleLayout.m in Sources */,
 				33AEB7721CB40F0800E3A21F /* ViewController.m in Sources */,
 				33C982121CB52E9900AA9A3D /* BlockLayout.m in Sources */,
 				33AEB76F1CB40F0800E3A21F /* AppDelegate.m in Sources */,

@@ -17,6 +17,7 @@
 		33AEB7901CB40F0900E3A21F /* CustomLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB78F1CB40F0900E3A21F /* CustomLayoutUITests.m */; };
 		33C9820B1CB5185200AA9A3D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C982091CB5185200AA9A3D /* CollectionViewCell.m */; };
 		33C9820C1CB5185200AA9A3D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9820A1CB5185200AA9A3D /* CollectionViewCell.xib */; };
+		33C9820F1CB5221500AA9A3D /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C9820E1CB5221500AA9A3D /* LineLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		33C982081CB5185200AA9A3D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		33C982091CB5185200AA9A3D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		33C9820A1CB5185200AA9A3D /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		33C9820D1CB5221500AA9A3D /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		33C9820E1CB5221500AA9A3D /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 		33AEB79D1CB4132300E3A21F /* customLayoutClass */ = {
 			isa = PBXGroup;
 			children = (
+				33C9820D1CB5221500AA9A3D /* LineLayout.h */,
+				33C9820E1CB5221500AA9A3D /* LineLayout.m */,
 			);
 			path = customLayoutClass;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				33AEB7721CB40F0800E3A21F /* ViewController.m in Sources */,
 				33AEB76F1CB40F0800E3A21F /* AppDelegate.m in Sources */,
 				33C9820B1CB5185200AA9A3D /* CollectionViewCell.m in Sources */,
+				33C9820F1CB5221500AA9A3D /* LineLayout.m in Sources */,
 				33AEB76C1CB40F0800E3A21F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

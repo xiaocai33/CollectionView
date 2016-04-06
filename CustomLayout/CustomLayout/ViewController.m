@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CollectionViewCell.h"
+#import "LineLayout.h"
 
 typedef enum{
     /** 流水布局 */
@@ -25,6 +26,10 @@ static NSString  * const ID = @"image";
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *images;
+
+@property (nonatomic, weak) UICollectionView *collectionView;
+
+@property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
 
 @end
 
@@ -91,6 +96,8 @@ static NSString  * const ID = @"image";
     //设置布局中每个cell的行间距
     flowLayout.minimumLineSpacing = 20;
     
+    self.flowLayout = flowLayout;
+    
     //设置滚动方向
     //flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
@@ -103,6 +110,8 @@ static NSString  * const ID = @"image";
     //注册cell(从xib加载)
     [collection registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ID];
     [self.view addSubview:collection];
+    
+    self.collectionView = collection;
     
     collection.translatesAutoresizingMaskIntoConstraints = NO;
     
@@ -150,11 +159,19 @@ static NSString  * const ID = @"image";
 - (void)btnClick:(UIButton *)btn{
     switch (btn.tag) {
         case buttonTypeFlow:
-            NSLog(@"buttonTypeFlow");
+        {
+            //if (![self.collectionView.collectionViewLayout isKindOfClass:[UICollectionViewFlowLayout class]]) {
+                [self.collectionView setCollectionViewLayout:self.flowLayout animated:YES];
+            //}
             break;
+        }
         case buttonTypeLine:
-            NSLog(@"buttonTypeLine");
+        {
+            if (![self.collectionView.collectionViewLayout isKindOfClass:[LineLayout class]]) {
+                [self.collectionView setCollectionViewLayout:[[LineLayout alloc] init] animated:YES];
+            }
             break;
+        }
         case buttonTypeBlock:
             NSLog(@"buttonTypeBlock");
             break;

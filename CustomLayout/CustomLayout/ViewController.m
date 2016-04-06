@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CollectionViewCell.h"
 #import "LineLayout.h"
+#import "BlockLayout.h"
 
 typedef enum{
     /** 流水布局 */
@@ -144,6 +145,16 @@ static NSString  * const ID = @"image";
 
 }
 
+#pragma mark - UICollectionViewDelegate 代理方法
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    //从模型中删除数据
+    [self.images removeObjectAtIndex:indexPath.item];
+    //从UI删除数据(刷新UI)
+    [collectionView deleteItemsAtIndexPaths:@[indexPath]];
+}
+
+#pragma mark - 其他
+
 /**
  *  添加按钮
  *  @param title 按钮文字
@@ -177,8 +188,13 @@ static NSString  * const ID = @"image";
             break;
         }
         case buttonTypeBlock:
-            NSLog(@"buttonTypeBlock");
+        {
+            if (![self.collectionView.collectionViewLayout isKindOfClass:[BlockLayout class]]) {
+                [self.collectionView setCollectionViewLayout:[[BlockLayout alloc] init] animated:YES];
+            }
             break;
+        }
+
         case buttonTypeCircle:
             NSLog(@"buttonTypeCircle");
             break;

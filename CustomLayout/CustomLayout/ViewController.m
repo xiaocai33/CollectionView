@@ -96,6 +96,9 @@ static NSString  * const ID = @"image";
     //设置布局中每个cell的行间距
     flowLayout.minimumLineSpacing = 20;
     
+    //设置内边距
+    flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    
     self.flowLayout = flowLayout;
     
     //设置滚动方向
@@ -103,6 +106,7 @@ static NSString  * const ID = @"image";
     
     //创建UICollectionView
     UICollectionView *collection = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:flowLayout];
+    collection.backgroundColor = [UIColor grayColor];
     collection.dataSource = self;
     collection.delegate = self;
     //设置布局为:UICollectionViewFlowLayout流水布局

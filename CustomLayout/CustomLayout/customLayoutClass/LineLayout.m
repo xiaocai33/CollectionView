@@ -8,6 +8,8 @@
 
 #import "LineLayout.h"
 
+static const CGFloat ItemWH = 100;
+
 @implementation LineLayout
 /**
  *  只要显示的边界发生改变就重新布局:
@@ -23,13 +25,17 @@
 - (void)prepareLayout{
     
     //设置内部每个cell的大小
-    self.itemSize = CGSizeMake(100, 100);
+    self.itemSize = CGSizeMake(ItemWH, ItemWH);
     
     //设置滚动方向为水平
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     //设置各个列(水平)/列(竖直)的间距
     self.minimumLineSpacing = 60;
+    
+    //设置内边距
+    CGFloat inset = (self.collectionView.frame.size.width - ItemWH) * 0.5;
+    self.sectionInset = UIEdgeInsetsMake(0, inset, 0, inset);
     
 }
 

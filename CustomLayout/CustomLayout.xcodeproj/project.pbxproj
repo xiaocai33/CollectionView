@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		337A64ED1CB55B82001CA8D9 /* customlayout.gif in Resources */ = {isa = PBXBuildFile; fileRef = 337A64EC1CB55B82001CA8D9 /* customlayout.gif */; };
 		33AEB76C1CB40F0800E3A21F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB76B1CB40F0800E3A21F /* main.m */; };
 		33AEB76F1CB40F0800E3A21F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB76E1CB40F0800E3A21F /* AppDelegate.m */; };
 		33AEB7721CB40F0800E3A21F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB7711CB40F0800E3A21F /* ViewController.m */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		337A64EC1CB55B82001CA8D9 /* customlayout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = customlayout.gif; sourceTree = "<group>"; };
 		33AEB7671CB40F0800E3A21F /* CustomLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AEB76B1CB40F0800E3A21F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33AEB76D1CB40F0800E3A21F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		33AEB76A1CB40F0800E3A21F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				337A64EC1CB55B82001CA8D9 /* customlayout.gif */,
 				33AEB76B1CB40F0800E3A21F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -289,6 +292,7 @@
 			files = (
 				33AEB77A1CB40F0800E3A21F /* LaunchScreen.storyboard in Resources */,
 				33AEB7771CB40F0800E3A21F /* Assets.xcassets in Resources */,
+				337A64ED1CB55B82001CA8D9 /* customlayout.gif in Resources */,
 				33C9821B1CB53B7D00AA9A3D /* CollectionViewCell.xib in Resources */,
 				33AEB7751CB40F0800E3A21F /* Main.storyboard in Resources */,
 			);

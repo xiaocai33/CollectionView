@@ -15,6 +15,8 @@
 		33AEB77A1CB40F0800E3A21F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AEB7781CB40F0800E3A21F /* LaunchScreen.storyboard */; };
 		33AEB7851CB40F0800E3A21F /* CustomLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB7841CB40F0800E3A21F /* CustomLayoutTests.m */; };
 		33AEB7901CB40F0900E3A21F /* CustomLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AEB78F1CB40F0900E3A21F /* CustomLayoutUITests.m */; };
+		33C9820B1CB5185200AA9A3D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C982091CB5185200AA9A3D /* CollectionViewCell.m */; };
+		33C9820C1CB5185200AA9A3D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9820A1CB5185200AA9A3D /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		33AEB78B1CB40F0900E3A21F /* CustomLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AEB78F1CB40F0900E3A21F /* CustomLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayoutUITests.m; sourceTree = "<group>"; };
 		33AEB7911CB40F0900E3A21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33C982081CB5185200AA9A3D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		33C982091CB5185200AA9A3D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		33C9820A1CB5185200AA9A3D /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,9 @@
 				33AEB76E1CB40F0800E3A21F /* AppDelegate.m */,
 				33AEB7701CB40F0800E3A21F /* ViewController.h */,
 				33AEB7711CB40F0800E3A21F /* ViewController.m */,
+				33C982081CB5185200AA9A3D /* CollectionViewCell.h */,
+				33C982091CB5185200AA9A3D /* CollectionViewCell.m */,
+				33C9820A1CB5185200AA9A3D /* CollectionViewCell.xib */,
 				33AEB7731CB40F0800E3A21F /* Main.storyboard */,
 				33AEB7761CB40F0800E3A21F /* Assets.xcassets */,
 				33AEB7781CB40F0800E3A21F /* LaunchScreen.storyboard */,
@@ -253,6 +261,7 @@
 			files = (
 				33AEB77A1CB40F0800E3A21F /* LaunchScreen.storyboard in Resources */,
 				33AEB7771CB40F0800E3A21F /* Assets.xcassets in Resources */,
+				33C9820C1CB5185200AA9A3D /* CollectionViewCell.xib in Resources */,
 				33AEB7751CB40F0800E3A21F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +289,7 @@
 			files = (
 				33AEB7721CB40F0800E3A21F /* ViewController.m in Sources */,
 				33AEB76F1CB40F0800E3A21F /* AppDelegate.m in Sources */,
+				33C9820B1CB5185200AA9A3D /* CollectionViewCell.m in Sources */,
 				33AEB76C1CB40F0800E3A21F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +514,7 @@
 				33AEB7961CB40F0900E3A21F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33AEB7971CB40F0900E3A21F /* Build configuration list for PBXNativeTarget "CustomLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +523,7 @@
 				33AEB7991CB40F0900E3A21F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33AEB79A1CB40F0900E3A21F /* Build configuration list for PBXNativeTarget "CustomLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +532,7 @@
 				33AEB79C1CB40F0900E3A21F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

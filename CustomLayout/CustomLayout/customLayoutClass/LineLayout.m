@@ -79,4 +79,34 @@ static CGFloat const scaleFactor = 0.6;
     return attrs;
 }
 
+/**
+*  用来设置collectionView停止滚动那一刻的位置
+*
+*  @param proposedContentOffset 原本collectionView停止滚动那一刻的位置
+*  @param velocity              滚动速度
+*/
+
+- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity{
+    
+    //计算停止滑动的区域
+    CGRect stopRect;
+    stopRect.origin = proposedContentOffset;
+    stopRect.size = self.collectionView.frame.size;
+    
+    //计算屏幕的中心
+    CGFloat centerX = proposedContentOffset.x + self.collectionView.frame.size.width * 0.5;
+    
+    //计算停止滑动区域的cell
+    NSArray *attrs = [self layoutAttributesForElementsInRect:stopRect];
+    
+    CGFloat adjustOffsetX  = CGFLOAT_MAX;
+    for (UICollectionViewLayoutAttributes *attr in attrs) {
+        if (ABS(attr.center.x - centerX) < ABS(adjustOffsetX)) {
+            adjustOffsetX = attr.center.x - centerX;
+        }
+    }
+    
+    return CGPointMake(proposedContentOffset.x + adjustOffsetX, proposedContentOffset.y);
+}
+
 @end
